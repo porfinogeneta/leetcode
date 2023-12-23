@@ -3,7 +3,7 @@ A = {0:[], 1: [3], 2:[4], 3:[0,1,4],4:[2,3]}
 # B = {0: [2], 1: [2], 2:[0,1,3], 3:[2,4],4:[3]}
 B = {0:[], 1: [3], 2:[4], 3:[4,1,0],4:[2,3]}
 
-def checking_bfs(A, B):
+def checking_if_same(A, B):
     queue = []
     visited = [False] * len(A)
     # visited[0] = True
@@ -37,4 +37,4 @@ def checking_bfs(A, B):
 
 
 if __name__ == '__main__':
-    print(checking_bfs(A,B))
+    print(checking_if_same(A,B))
