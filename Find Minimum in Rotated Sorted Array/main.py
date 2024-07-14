@@ -11,7 +11,7 @@ def findMin(nums):
         if nums[mid] >= nums[l]:
             l = mid + 1
             res = min(nums[mid], res)
-        # środek jest częścią rosnącej mniejszej częsci, chcemy przeszukać jej prawą stronę
+        # środek jest częścią rosnącej mniejszej częsci, chcemy przeszukać jej lewą stronę
         else:
             res = min(nums[mid], res)
             r = mid - 1

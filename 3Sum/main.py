@@ -6,7 +6,7 @@ def three_sum(nums):
     for i in range(len(nums)):
         target = nums[i]
         # algorytm 2sum do sprawdzenie czy osiągniemy nasz target,
-        # czyli naszpierwszy element z naszej trójki do sprawdzenia
+        # czyli nasz pierwszy element z naszej trójki do sprawdzenia
         l = i+1
         r = len(nums) - 1
         while l < r:

@@ -4,7 +4,7 @@ def twoSum(nums, target):
     l = 0
     r = len(nums) - 1
     while l < r:
-        # przesuwamy prawy wskaźnik dopóki liczby na końcu na pewno są większe od wyniku, kótry chcemy
+        # przesuwamy prawy wskaźnik dopóki liczby na końcu na pewno są większe od wyniku, który chcemy
         if nums[r] + nums[l] > target:
             r -= 1
         # przesuwamy w lewy wskaźnik jeśli nasza suma okazała się za mała

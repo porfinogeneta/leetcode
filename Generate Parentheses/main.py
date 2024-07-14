@@ -30,4 +30,4 @@ def generateParenthesis(n):
 
 
 if __name__ == '__main__':
-    generateParenthesis(3)
+    print(generateParenthesis(3))
