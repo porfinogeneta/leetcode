@@ -1,6 +1,13 @@
 
 
 def dailyTemperatures(temperatures):
+    """
+        :type temperatures: List[int]
+        :rtype: List[int]
+        idea: przechodzimy po kolei temperatury, zapisujemy je w malejącym stacku,
+        jak pojawi się większa wartość niż ta na górze stosu to wrzucamy ją wyniku, odejmując
+        ideksy, na stosie trzymamy temperaturę i indeks, która to była temperatura
+    """
     # stos wartości malejących
     res = [0] * len(temperatures)
     # stos na pary wartoci index,temeperatura

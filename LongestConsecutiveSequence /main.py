@@ -1,4 +1,9 @@
 def longestConsecutive(nums):
+    """
+    idea: wrzucamy wszystko do seta, potem idziemy po kolei po nums i jeżeli
+    dana liczba - 1 nie jest w setcie, to znaczy że jest pierwsza w kolejności,
+    no i badamy czy kolejne liczby też są w setcir, jak to to zwiększamy długość mxSeq
+    """
     mxSeq = 1
     ns = set(nums)
     for i in ns:
