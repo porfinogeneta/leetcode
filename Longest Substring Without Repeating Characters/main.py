@@ -1,4 +1,12 @@
 def lengthOfLongestSubstring(s):
+    """
+        :type s: str
+        :rtype: int
+        idea: przechodzimy po naszym stringu, będziemy mieli haszmapę z literami już
+        użytymi, jak napotkana litera nie jest w haszmapie, to rozszerzamy okno
+        i aktualizujemy max (jak trzeba), jak jest w haszmapie, to skracamy window
+        dopóki nie wyrzucimy z haszmapy naszej dodawanej litery - O(n)
+    """
     letters = set() # set na literki
     res = 0
     l, r = 0, 0

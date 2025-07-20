@@ -1,5 +1,14 @@
 
 def trap(height):
+    """
+    :type height: List[int]
+    :rtype: int
+    idea: 1. zapisać dla każdego indeksu maximum z lewej i maksimum z prawej
+    i policzyć wodę na każdym polu, czyli min(left_max, right_max) - h[i]
+    2. zrobić dwa pointery i trzymać zmienne left_max, right_max, przechodząć
+    pointerami znając mnijeszą wysokość wiemy ile co najwyżej wody się zmieści między nimi,
+    przesuwamy zawsze pointer który ma mnijeszą wysokość max
+    """
     lMax = height[0]
     rMax = height[-1]
     l,r = 0, len(height)-1
